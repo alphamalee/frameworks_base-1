@@ -45,6 +45,7 @@ import android.view.View;
 import android.view.WindowInsets;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.HorizontalScrollView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -142,6 +143,8 @@ public class QuickStatusBarHeader extends RelativeLayout implements
      */
     private final Runnable mAutoFadeOutTooltipRunnable = () -> hideLongPressTooltip(false);
 
+    private HorizontalScrollView mQuickQsPanelScroller;
+
     public QuickStatusBarHeader(Context context, AttributeSet attrs) {
         super(context, attrs);
         mAlarmController = Dependency.get(NextAlarmController.class);
@@ -191,6 +194,9 @@ public class QuickStatusBarHeader extends RelativeLayout implements
         mClockView.setOnClickListener(this);
         mDateView = findViewById(R.id.date);
         mDateView.setOnClickListener(this);
+
+        mQuickQsPanelScroller = (HorizontalScrollView) findViewById(R.id.quick_qs_panel_scroll);
+        mQuickQsPanelScroller.setHorizontalScrollBarEnabled(false);
     }
 
     private void updateStatusText() {
@@ -653,5 +659,13 @@ public class QuickStatusBarHeader extends RelativeLayout implements
         if (QS_SHOW_INFO_HEADER.equals(key)) {
             mHeaderTextContainerView.setVisibility(newValue == null || Integer.parseInt(newValue) != 0 ? VISIBLE : GONE);
         }
+    }
+
+    public void onClosingFinished() {
+        mQuickQsPanelScroller.scrollTo(0, 0);
+    }
+
+    public void updateSettings() {
+        mHeaderQsPanel.updateSettings();
     }
 }
