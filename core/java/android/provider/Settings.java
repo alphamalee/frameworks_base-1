@@ -6512,6 +6512,15 @@ public final class Settings {
          */
         public static final String BATTERY_LEVEL_CHARGE_ALARM_ENABLED = "battery_level_charge_alarm_enabled";
 
+        /**
+         * modify how the album art shows up on lockscreen
+         * 0 - default
+         * 1 - grayscale
+         * 2 - blurry
+         * @hide
+         */
+        public static final String LOCKSCREEN_ALBUM_ART_FILTER = "lockscreen_album_art_filter";
+
 	/**
          * Whether to blend battery light colors between full and empty value.
          * @hide
