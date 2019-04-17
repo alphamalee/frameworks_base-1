@@ -3111,7 +3111,7 @@ public final class ActivityThread extends ClientTransactionHandler {
 
     private void reportSizeConfigurations(ActivityClientRecord r) {
         Configuration[] configurations = r.activity.getResources().getSizeConfigurations();
-        if (configurations == null) {
+        if (configurations == null || r.activity.mFinished) {
             return;
         }
         SparseIntArray horizontal = new SparseIntArray();
@@ -3945,12 +3945,13 @@ public final class ActivityThread extends ClientTransactionHandler {
                 l.softInputMode = (l.softInputMode
                         & (~WindowManager.LayoutParams.SOFT_INPUT_IS_FORWARD_NAVIGATION))
                         | forwardBit;
-                if (r.activity.mVisibleFromClient) {
-                    ViewManager wm = a.getWindowManager();
-                    View decor = r.window.getDecorView();
-                    wm.updateViewLayout(decor, l);
-                }
             }
+
+            if (r.activity.mVisibleFromClient) {
+                ViewManager wm = a.getWindowManager();
+                View decor = r.window.getDecorView();
+                wm.updateViewLayout(decor, l);
+             }
 
             r.activity.mVisibleFromServer = true;
             mNumVisibleActivities++;
