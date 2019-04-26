@@ -1,22 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2017 crDroid Android Project
+<?xml version="1.0" encoding="utf-8"?> <!--
+     Copyright (C) 2019 Havoc-OS
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
           http://www.apache.org/licenses/LICENSE-2.0
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or 
+implied.
      See the License for the specific language governing permissions and
-     limitations under the License.
--->
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-        android:width="20.0dp"
-        android:height="20.0dp"
-        android:viewportWidth="24.0"
-        android:viewportHeight="24.0">
+     limitations under the License. --> <vector 
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="18.0dp"
+    android:height="18.0dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
     <path
         android:fillColor="#FFFFFFFF"
-android:pathData="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z" />
+        android:pathData="M11.5,22V17.35C11,18.13 10,19.09 
+8.03,19.81C8.03,19.81 8.53,18.1 9.94,16.95C8.64,17.23 6.68,17.19 
+4,16C4,16 6.47,14.59 9.28,14.97C7.69,14 5.7,12.08 4.17,8.11C4.17,8.11 
+8.67,9.34 10.91,13.14C8.88,8.24 12,2 12,2C14.43,7.47 13.91,11.1 
+13.12,13.1C15.37,9.33 19.83,8.11 19.83,8.11C18.3,12.08 16.31,14 
+14.72,14.97C17.53,14.59 20,16 20,16C17.32,17.19 15.36,17.23 
+14.06,16.95C15.47,18.1 15.97,19.81 15.97,19.81C14,19.09 13,18.13 
+12.5,17.35V22H11.5Z" />
 </vector>
