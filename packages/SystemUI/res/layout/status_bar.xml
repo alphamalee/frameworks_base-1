@@ -51,12 +51,12 @@
         >
         <ImageView
             android:id="@+id/status_bar_logo"
-            android:layout_width="@dimen/status_bar_icon_size"
-            android:layout_height="@dimen/status_bar_icon_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@drawable/status_bar_logo"
 	    android:scaleType="centerInside"
-	    android:paddingStart="@dimen/status_bar_xtnd_padding"
-	    android:paddingEnd="@dimen/status_bar_xtnd_padding"
+	    android:paddingStart="3dp"
+	    android:paddingEnd="2dp"
             android:visibility="gone" />
 
         <com.android.systemui.xtended.carrierlabel.CarrierLabel
@@ -166,12 +166,12 @@
 
         <ImageView
             android:id="@+id/status_bar_logo_right"
-            android:layout_width="@dimen/status_bar_icon_size"
-            android:layout_height="@dimen/status_bar_icon_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@drawable/status_bar_logo"
             android:scaleType="centerInside"
-	    android:paddingStart="@dimen/status_bar_xtnd_padding"
-	    android:paddingEnd="@dimen/status_bar_xtnd_padding"
+	    android:paddingStart="3dp"
+	    android:paddingEnd="2dp"
 	    android:visibility="gone" 
 	    />
 															    
